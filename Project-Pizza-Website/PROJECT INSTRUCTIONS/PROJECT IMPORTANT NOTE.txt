@@ -1,0 +1,15 @@
+IMPORTANT NOTE - Description English 
+
+* Upload project to internet (https://www.netlify.com/)
+Follow the steps in the images on how to upload your website to the internet.
+
+* Modify the project
+
+Just add your information in the HTML file and leave the project as it is.
+
+If you are going to modify the project in the CSS file, do it normally.
+
+* Images of the project
+
+When inserting different images keep in mind that they must measure the same
+size of the original images (eg: 1200 x 1050, etc).
