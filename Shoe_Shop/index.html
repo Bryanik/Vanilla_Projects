@@ -4,8 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nike - Just Do It</title>
+
+    <!--=============== SWIPER CSS ===============-->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    /> -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CUSTOM CSS ===============-->
     <link rel="stylesheet" href="style.css" />
+
+    <!--=============== FAVICON ===============-->
     <link id="logo" rel="shortcut icon" href="image/logo.png" />
+
+    <!--=============== FONT AWESOME ===============-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -15,74 +28,120 @@
     />
   </head>
   <body>
-    <section>
-      <!-- Menu icon for mobile -->
-      <div id="menu-icon">
-        <i class="fa fa-bars"></i>
+    <nav class="desktop_nav">
+      <div class="logo">
+        <a href="#"
+          ><h1>Shoe<span>s</span></h1></a
+        >
       </div>
 
-      <nav class="hidden">
-        <div class="logo">
-          <!-- Menu icon 2 for mobile -->
-          <h1>Shoe<span>s</span></h1>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Products">Products</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Review">Review</a></li>
+        <li><a href="#Services">Services</a></li>
+      </ul>
 
-          <div id="menu-icon2">
-            <i class="fa-solid fa-x"></i>
-          </div>
+      <div class="icons">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-user"></i>
+      </div>
+    </nav>
+
+    <input class="slideInput" type="checkbox" id="check" />
+    <div class="btn_one">
+      <label for="check">
+        <i class="fas fa-bars"></i>
+      </label>
+    </div>
+
+    <!-- Sidebar Menu  -->
+    <div class="sidebar_menu">
+      <div class="logo">
+        <a href="#"
+          ><h1>Shoe<span>s</span></h1></a
+        >
+        <div class="btn_two">
+          <label for="check">
+            <i class="fas fa-times"></i>
+          </label>
         </div>
+      </div>
 
+      <div class="menu">
         <ul>
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#Products">Products</a></li>
-          <li><a href="#About">About</a></li>
-          <li><a href="#Review">Review</a></li>
-          <li><a href="#Services">Services</a></li>
+          <li>
+            <a href="#Home"
+              ><i class="fa-solid fa-house"></i><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#Products"
+              ><i class="fa-solid fa-shoe-prints"></i><span>Products</span></a
+            >
+          </li>
+          <li>
+            <a href="#About"
+              ><i class="fa-solid fa-address-card"></i><span>Abou</span>t</a
+            >
+          </li>
+          <li>
+            <a href="#Review"
+              ><i class="fa-solid fa-comment"></i><span>Review</span></a
+            >
+          </li>
+          <li>
+            <a href="#Services"
+              ><i class="fa-solid fa-handshake"></i><span>Services</span></a
+            >
+          </li>
         </ul>
+      </div>
+      <div class="social_media">
+        <a href="#"><i class="fa-solid fa-heart"></i></a>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="#"><i class="fa-solid fa-user"></i></a>
+      </div>
+    </div>
 
-        <div class="icons">
-          <i class="fa-solid fa-heart"></i>
-          <i class="fa-solid fa-cart-shopping"></i>
-          <i class="fa-solid fa-user"></i>
-        </div>
-      </nav>
-
-      <div class="main" id="Home">
-        <div class="main_content">
-          <div class="main_text">
-            <h1>NIKE<span>Collection</span></h1>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
-            </p>
+    <!-- Home -->
+    <div class="home" id="Home">
+      <div class="home_content">
+        <div class="home_text">
+          <h1>NIKE<span>Collection</span></h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.
+          </p>
+          <div class="button">
+            <a href="#">SHOP NOW</a>
+            <i class="fa-solid fa-chevron-right"></i>
           </div>
-          <div class="main_image">
-            <img src="image/shoes.png" />
-          </div>
         </div>
-
-        <div class="button">
-          <a href="#">SHOP NOW</a>
-          <i class="fa-solid fa-chevron-right"></i>
-        </div>
-
-        <div class="social_icon">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin-in"></i>
+        <div class="home_image">
+          <img src="image/shoes.png" />
         </div>
       </div>
-    </section>
+
+      <div class="social_icon">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+    </div>
 
     <!-- Products  -->
-    <div class="products" id="Products">
+    <div class="products swiper mySwiper" id="Products">
       <h1>Products</h1>
-      <div class="box">
-        <div class="card" id="shoe1">
+      <div class="box swiper-wrapper">
+        <div class="card swiper-slide" id="shoe1">
           <div class="small_card">
             <i class="fa-solid fa-heart"></i>
             <i class="fa-solid fa-share"></i>
@@ -103,11 +162,11 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
             </div>
-            <a href="#" class="btn">Add To Cart</a>
+            <a href="#" class="default_btn">Add To Cart</a>
           </div>
         </div>
 
-        <div class="card" id="shoe2">
+        <div class="card swiper-slide" id="shoe2">
           <div class="small_card">
             <i class="fa-solid fa-heart"></i>
             <i class="fa-solid fa-share"></i>
@@ -128,11 +187,11 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star-half-stroke"></i>
             </div>
-            <a href="#" class="btn">Add To Cart</a>
+            <a href="#" class="default_btn">Add To Cart</a>
           </div>
         </div>
 
-        <div class="card" id="shoe3">
+        <div class="card swiper-slide" id="shoe3">
           <div class="small_card">
             <i class="fa-solid fa-heart"></i>
             <i class="fa-solid fa-share"></i>
@@ -152,11 +211,11 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star-half-stroke"></i>
             </div>
-            <a href="#" class="btn">Add To Cart</a>
+            <a href="#" class="default_btn">Add To Cart</a>
           </div>
         </div>
 
-        <div class="card" id="shoe4">
+        <div class="card swiper-slide" id="shoe4">
           <div class="small_card">
             <i class="fa-solid fa-heart"></i>
             <i class="fa-solid fa-share"></i>
@@ -177,11 +236,11 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-regular fa-star"></i>
             </div>
-            <a href="#" class="btn">Add To Cart</a>
+            <a href="#" class="default_btn">Add To Cart</a>
           </div>
         </div>
 
-        <div class="card" id="shoe5">
+        <div class="card swiper-slide" id="shoe5">
           <div class="small_card">
             <i class="fa-solid fa-heart"></i>
             <i class="fa-solid fa-share"></i>
@@ -202,11 +261,11 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
             </div>
-            <a href="#" class="btn">Add To Cart</a>
+            <a href="#" class="default_btn">Add To Cart</a>
           </div>
         </div>
 
-        <div class="card" id="shoe6">
+        <div class="card swiper-slide" id="shoe6">
           <div class="small_card">
             <i class="fa-solid fa-heart"></i>
             <i class="fa-solid fa-share"></i>
@@ -227,11 +286,11 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-regular fa-star-half-stroke"></i>
             </div>
-            <a href="#" class="btn">Add To Cart</a>
+            <a href="#" class="default_btn">Add To Cart</a>
           </div>
         </div>
 
-        <div class="card" id="shoe7">
+        <div class="card swiper-slide" id="shoe7">
           <div class="small_card">
             <i class="fa-solid fa-heart"></i>
             <i class="fa-solid fa-share"></i>
@@ -252,11 +311,11 @@
               <i class="fa-regular fa-star"></i>
               <i class="fa-regular fa-star"></i>
             </div>
-            <a href="#" class="btn">Add To Cart</a>
+            <a href="#" class="default_btn">Add To Cart</a>
           </div>
         </div>
 
-        <div class="card" id="shoe8">
+        <div class="card swiper-slide" id="shoe8">
           <div class="small_card">
             <i class="fa-solid fa-heart"></i>
             <i class="fa-solid fa-share"></i>
@@ -277,15 +336,16 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-regular fa-star-half-stroke"></i>
             </div>
-            <a href="#" class="btn">Add To Cart</a>
+            <a href="#" class="default_btn">Add To Cart</a>
           </div>
         </div>
       </div>
+      <div class="swiper-pagination"></div>
     </div>
 
     <!-- About -->
     <div class="about" id="About">
-      <h1>Web<span>About</span></h1>
+      <h1>Shoes<span>About</span></h1>
 
       <div class="about_main">
         <div class="about_image">
@@ -296,36 +356,50 @@
             <img src="image/red_shoes4.png" onclick="functio(this)" />
           </div>
 
-          <div class="image_container">
+          <div class="big_image">
             <img src="image/red_shoes1.png" id="imagebox" />
           </div>
         </div>
-
-        <a href="#" class="about_btn" id="mobile_shop_btn">Shop Now</a>
 
         <div class="about_text">
           <p>
             Contrary to popular belief, Lorem Ipsum is not simply random text.
             It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old. Richard McClintock, a Latin professor
-            at Hampden-Sydney College in Virginia, looked up one of the more
-            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-            going through the cites of the word in classical literature,
-            discovered the undoubtable source. Lorem Ipsum comes from sections
-            1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
-            of Good and Evil) by Cicero, written in 45 BC. This book is a
-            treatise on the theory of ethics, very popular during the
-            Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
-            amet..", comes from a line in section 1.10.32. The standard chunk of
-            Lorem Ipsum used since the 1500s is reproduced below for those
-            interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
-            Malorum" by Cicero are also reproduced in their exact original form,
-            accompanied by English versions from the 1914 translation by H.
-            Rackham.
+            making it over 2000 years old.
+            <span id="moreText" style="display: none">
+              Richard McClintock, a Latin professor at Hampden-Sydney College in
+              Virginia, looked up one of the more obscure Latin words,
+              consectetur, from a Lorem Ipsum passage, and going through the
+              cites of the word in classical literature, discovered the
+              undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
+              1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good
+              and Evil) by Cicero, written in 45 BC. This book is a treatise on
+              the theory of ethics, very popular during the Renaissance. The
+              first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes
+              from a line in section 1.10.32. The standard chunk of Lorem Ipsum
+              used since the 1500s is reproduced below for those interested.
+              Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum"
+              by Cicero are also reproduced in their exact original form,
+              accompanied by English versions from the 1914 translation by H.
+              Rackham.
+            </span>
+            <a
+              href="#"
+              id="readMoreBtn"
+              onclick="toggleText(event)"
+              style="
+                display: none;
+                text-decoration: underline;
+                -webkit-text-fill-color: #6c14d0;
+              "
+              >Read More</a
+            >
           </p>
         </div>
+        <div class="about_btn">
+          <a href="#" class="default_btn">Shop Now</a>
+        </div>
       </div>
-      <a href="#" class="about_btn" id="desktop_shop_btn">Shop Now</a>
 
       <script>
         function functio(small) {
@@ -338,269 +412,184 @@
     <!-- Review  -->
     <div class="review" id="Review">
       <h1>Customer's<span>review</span></h1>
+      <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
+        <swiper-slide>
+          <div class="card_top">
+            <div class="profile">
+              <div class="profile_image">
+                <img src="image/girl_dp1.jpg" />
+              </div>
 
-      <div class="reviewContainer">
-        <div onclick="prevSlide()" id="prevBtn">
-          <i class="fa-solid fa-circle-chevron-left"></i>
-        </div>
+              <div class="name">
+                <strong>Ranidi Lochana</strong>
 
-        <div class="review_box">
-          <div class="review_card">
-            <div class="card_top">
-              <div class="profile">
-                <div class="profile_image">
-                  <img src="image/girl_dp1.jpg" />
-                </div>
-
-                <div class="name">
-                  <strong>Ranidi Lochana</strong>
-
-                  <div class="like">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                  </div>
+                <div class="like">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
                 </div>
               </div>
             </div>
-            <div class="comment">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Debitis, amet nesciunt voluptatem cum architecto ipsum vero
-                nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore
-                velit ipsa repellat numquam atque dolores!
-              </p>
-            </div>
           </div>
+          <div class="comment">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+              amet nesciunt voluptatem cum architecto ipsum vero nulla
+              voluptatibus dolorum modi assumenda eum? Aliquid inventore velit
+              ipsa repellat numquam atque dolores!
+            </p>
+          </div>
+        </swiper-slide>
 
-          <div class="review_card">
-            <div class="card_top">
-              <div class="profile">
-                <div class="profile_image">
-                  <img src="image/man_dp1.jpg" />
-                </div>
+        <swiper-slide>
+          <div class="card_top">
+            <div class="profile">
+              <div class="profile_image">
+                <img src="image/man_dp1.jpg" />
+              </div>
 
-                <div class="name">
-                  <strong>Sayuru Tharanga</strong>
+              <div class="name">
+                <strong>Sayuru Tharanga</strong>
 
-                  <div class="like">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </div>
+                <div class="like">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
                 </div>
               </div>
             </div>
-            <div class="comment">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Debitis, amet nesciunt voluptatem cum architecto ipsum vero
-                nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore
-                velit ipsa repellat numquam atque dolores!
-              </p>
-            </div>
           </div>
+          <div class="comment">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+              amet nesciunt voluptatem cum architecto ipsum vero nulla
+              voluptatibus dolorum modi assumenda eum? Aliquid inventore velit
+              ipsa repellat numquam atque dolores!
+            </p>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="card_top">
+            <div class="profile">
+              <div class="profile_image">
+                <img src="image/man_dp2.jpg" />
+              </div>
 
-          <div class="review_card">
-            <div class="card_top">
-              <div class="profile">
-                <div class="profile_image">
-                  <img src="image/man_dp2.jpg" />
-                </div>
+              <div class="name">
+                <strong>Senuda Dilwan</strong>
 
-                <div class="name">
-                  <strong>Senuda Dilwan</strong>
-
-                  <div class="like">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </div>
+                <div class="like">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
                 </div>
               </div>
             </div>
-            <div class="comment">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Debitis, amet nesciunt voluptatem cum architecto ipsum vero
-                nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore
-                velit ipsa repellat numquam atque dolores!
-              </p>
-            </div>
           </div>
+          <div class="comment">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+              amet nesciunt voluptatem cum architecto ipsum vero nulla
+              voluptatibus dolorum modi assumenda eum? Aliquid inventore velit
+              ipsa repellat numquam atque dolores!
+            </p>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="card_top">
+            <div class="profile">
+              <div class="profile_image">
+                <img src="image/gir_dp3.jpg" />
+              </div>
 
-          <div class="review_card">
-            <div class="card_top">
-              <div class="profile">
-                <div class="profile_image">
-                  <img src="image/gir_dp3.jpg" />
-                </div>
+              <div class="name">
+                <strong>Kaveesha Vidurangi</strong>
 
-                <div class="name">
-                  <strong>Kaveesha Vidurangi</strong>
-
-                  <div class="like">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </div>
+                <div class="like">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
                 </div>
               </div>
             </div>
-            <div class="comment">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Debitis, amet nesciunt voluptatem cum architecto ipsum vero
-                nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore
-                velit ipsa repellat numquam atque dolores!
-              </p>
-            </div>
           </div>
+          <div class="comment">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+              amet nesciunt voluptatem cum architecto ipsum vero nulla
+              voluptatibus dolorum modi assumenda eum? Aliquid inventore velit
+              ipsa repellat numquam atque dolores!
+            </p>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="card_top">
+            <div class="profile">
+              <div class="profile_image">
+                <img src="image/man_dp3.jpg" />
+              </div>
 
-          <div class="review_card">
-            <div class="card_top">
-              <div class="profile">
-                <div class="profile_image">
-                  <img src="image/man_dp3.jpg" />
-                </div>
+              <div class="name">
+                <strong>John Deo</strong>
 
-                <div class="name">
-                  <strong>John Deo</strong>
-
-                  <div class="like">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                  </div>
+                <div class="like">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
                 </div>
               </div>
             </div>
-            <div class="comment">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Debitis, amet nesciunt voluptatem cum architecto ipsum vero
-                nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore
-                velit ipsa repellat numquam atque dolores!
-              </p>
-            </div>
           </div>
+          <div class="comment">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+              amet nesciunt voluptatem cum architecto ipsum vero nulla
+              voluptatibus dolorum modi assumenda eum? Aliquid inventore velit
+              ipsa repellat numquam atque dolores!
+            </p>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="card_top">
+            <div class="profile">
+              <div class="profile_image">
+                <img src="image/gir_dp2.jpg" />
+              </div>
 
-          <div class="review_card">
-            <div class="card_top">
-              <div class="profile">
-                <div class="profile_image">
-                  <img src="image/gir_dp2.jpg" />
-                </div>
+              <div class="name">
+                <strong>Charith Aruna</strong>
 
-                <div class="name">
-                  <strong>Charith Aruna</strong>
-
-                  <div class="like">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                  </div>
+                <div class="like">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
                 </div>
               </div>
             </div>
-            <div class="comment">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Debitis, amet nesciunt voluptatem cum architecto ipsum vero
-                nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore
-                velit ipsa repellat numquam atque dolores!
-              </p>
-            </div>
           </div>
-        </div>
-
-        <div onclick="nextSlide()" id="nextBtn">
-          <i class="fa-solid fa-circle-chevron-right"></i>
-        </div>
-      </div>
+          <div class="comment">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+              amet nesciunt voluptatem cum architecto ipsum vero nulla
+              voluptatibus dolorum modi assumenda eum? Aliquid inventore velit
+              ipsa repellat numquam atque dolores!
+            </p>
+          </div>
+        </swiper-slide>
+      </swiper-container>
     </div>
-
-    <script>
-      let currentIndex = 0;
-      const slides = document.querySelectorAll(".review_card");
-      const totalSlides = slides.length;
-      const slideInterval = 3000; // 3 seconds interval
-
-      function showSlide(index) {
-        const reviewBox = document.querySelector(".review_box");
-        if (index >= totalSlides) {
-          currentIndex = 0;
-        } else if (index < 0) {
-          currentIndex = totalSlides - 1; //To move backwards from first to last slide
-        } else {
-          currentIndex = index;
-        }
-        reviewBox.style.transform = `translateX(-${currentIndex * 100}%)`;
-      }
-
-      // Auto-slide function
-      function autoSlide() {
-        currentIndex++;
-        showSlide(currentIndex);
-      }
-
-      // Manual navigation
-      function prevSlide() {
-        currentIndex--;
-        showSlide(currentIndex);
-      }
-
-      function nextSlide() {
-        currentIndex++;
-        showSlide(currentIndex);
-      }
-
-      // Function to check screen width and enable/disable autoSlide
-      function checkScreenWidth() {
-        const isMobile = window.matchMedia("(max-width: 768px)").matches;
-
-        if (isMobile) {
-          slideTimer = setInterval(autoSlide, slideInterval); // Enable auto-slide for mobile
-        } else {
-          clearInterval(slideTimer); // Disable auto-slide for desktop
-        }
-      }
-
-      // Run the check on initial load
-      checkScreenWidth();
-
-      // Run the check whenever the window is resized
-      window.addEventListener("resize", checkScreenWidth);
-
-      // Set the auto-slide to run every 3 seconds
-      let slideTimer = setInterval(autoSlide, slideInterval);
-
-      // Pause the auto-slide when hovering over the reviewContainer
-      document
-        .querySelector(".reviewContainer")
-        .addEventListener("mouseover", () => {
-          clearInterval(slideTimer);
-        });
-
-      // Resume the auto-slide when no longer hovering over the reviewContainer
-      document
-        .querySelector(".reviewContainer")
-        .addEventListener("mouseout", () => {
-          slideTimer = setInterval(autoSlide, slideInterval);
-        });
-    </script>
 
     <!-- Services -->
     <div class="services" id="Services">
@@ -638,26 +627,28 @@
         <h1>Welcome Back!</h1>
 
         <form action="#" method="post">
-          <p>User Name</p>
+          <p class="user_title">User Name</p>
           <div class="user">
             <i class="fa-solid fa-user"></i>
             <input
               type="text"
               name="user"
-              placeholder="User Name"
+              placeholder="Username"
               class="username"
             />
           </div>
 
-          <p class="passworg_tag">Password</p>
+          <p class="passworg_title">Password</p>
+
           <div class="password">
             <i class="fa-solid fa-lock"></i>
             <input type="text" name="password" placeholder="Password" />
           </div>
 
-          <p class="forget">Forgot Password ?</p>
+          <a href="#"><p class="forget">Forgot Password ?</p></a>
+          <br />
 
-          <button type="submit">Login</button>
+          <button class="default_btn" type="submit">Login</button>
           <div class="loging_icon">
             <a href="#"><img src="image/google.png" /></a>
             <a href="#"><img src="image/facebook.png" /></a>
@@ -672,7 +663,7 @@
     <footer>
       <div class="footer_main">
         <div class="tag">
-          <h1>Contact</h1>
+          <h1 class="center">Contact</h1>
           <a href="#"><i class="fa-solid fa-house"></i>123/Colombo/Sri Lanka</a>
           <a href="#"><i class="fa-solid fa-phone"></i>+94 12 345 6789</a>
           <a href="#"><i class="fa-solid fa-envelope"></i>contact@gmail.com</a>
@@ -708,32 +699,24 @@
           <h1 class="center">Newsletter</h1>
           <div class="search_bar">
             <input type="text" placeholder="You email id here" />
-            <button type="submit">Subscribe</button>
+            <button type="submit">
+              Subscribe<i class="fa-solid fa-chevron-right"></i>
+            </button>
           </div>
         </div>
       </div>
     </footer>
 
-    <script>
-      document
-        .querySelector("#menu-icon")
-        .addEventListener("click", function () {
-          const navElement = document.querySelector("nav");
+    <!--=============== ABOUT READ MORE BUTTON ===============-->
+    <script src="assets/js/read_more.js"></script>
 
-          if (navElement.classList.contains("hidden")) {
-            navElement.classList.remove("hidden");
-          }
-        });
+    <!--=============== REVIEW SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
-      document
-        .querySelector("#menu-icon2")
-        .addEventListener("click", function () {
-          const navElement = document.querySelector("nav");
-
-          if (!navElement.classList.contains("hidden")) {
-            navElement.classList.add("hidden");
-          }
-        });
-    </script>
+    <!-- INITIALIZE PRODUCTS SWIPER -->
+    <!--? Source Code  -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--? Initiate Swiper  -->
+    <script src="assets/js/initiateSwiper.js"></script>
   </body>
 </html>
