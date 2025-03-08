@@ -10,6 +10,10 @@ function initSwiper() {
           el: ".swiper-pagination",
           clickable: true,
         },
+        keyboard: {
+          enabled: true,
+          onlyInViewport: false,
+        },
       });
     }
   } else {
